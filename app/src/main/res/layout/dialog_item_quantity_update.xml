@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/click_after_amount">
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:gravity="end|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/imageView_close_dialog_cart"
+                android:src="@drawable/ic_back_arrow"
+                android:gravity="center"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:id="@+id/cart_plus_minus_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/product_cart_code"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/cart_decrement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_minus" />
+
+        <TextView
+            android:id="@+id/cart_product_quantity_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="10"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cart_increment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/update_quantity_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add to cart"
+        android:background="@color/colorPrimary"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/view_cart_button_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Cart"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textAlignment="center"/>
+
+</LinearLayout>
+</LinearLayout>
